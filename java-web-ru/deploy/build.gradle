@@ -42,11 +42,4 @@ tasks.withType(JavaCompile) {
 // BEGIN
 task stage(dependsOn: ['clean', 'installDist'])
 installDist.mustRunAfter clean
-
-jar {
-  manifest {
-    attributes(
-            'Main-Class': 'exercise.App')
-  }
-}
 // END
